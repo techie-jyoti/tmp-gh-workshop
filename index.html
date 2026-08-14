@@ -41,6 +41,18 @@
               <span aria-hidden="true">&#8594;</span>
             </button>
           </li>
+          <li>
+            <button
+              class="daily-update-trigger"
+              type="button"
+              aria-haspopup="dialog"
+              aria-controls="august-14-dialog"
+              data-dialog-trigger
+            >
+              <span>14th of August</span>
+              <span aria-hidden="true">&#8594;</span>
+            </button>
+          </li>
         </ul>
       </nav>
     </aside>
@@ -176,6 +188,34 @@
           Actions for tasks where exact reproducibility doesn&rsquo;t matter, such as triaging
           issues, drafting documentation, researching dependencies, or proposing code
           improvements for human review.
+        </p>
+      </article>
+    </dialog>
+
+    <dialog
+      class="daily-update-dialog"
+      id="august-14-dialog"
+      aria-labelledby="august-14-question"
+      aria-describedby="august-14-answer"
+    >
+      <article class="daily-update-dialog-content">
+        <header class="daily-update-dialog-header">
+          <p>Daily Update / 14th of August</p>
+          <form method="dialog">
+            <button class="dialog-close" type="submit" aria-label="Close dialog" title="Close dialog">
+              <span aria-hidden="true">&#10005;</span>
+            </button>
+          </form>
+        </header>
+        <h2 id="august-14-question">Who pays for the use of AI?</h2>
+        <p id="august-14-answer">
+          It depends on the AI engine you configure. With
+          <strong>GitHub Copilot CLI</strong> (the default), usage is billed through your
+          organization via <code>copilot-requests: write</code>, or through the account
+          supplying <code>COPILOT_GITHUB_TOKEN</code>. With <strong>Claude Code</strong>,
+          the Anthropic account tied to your configured API key is billed instead. Either
+          way, you supply the credentials, so your organization or account controls and
+          pays for the AI usage&mdash;gh-aw itself does not add its own billing layer.
         </p>
       </article>
     </dialog>
