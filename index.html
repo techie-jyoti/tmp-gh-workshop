@@ -41,6 +41,18 @@
               <span aria-hidden="true">&#8594;</span>
             </button>
           </li>
+          <li>
+            <button
+              class="daily-update-trigger"
+              type="button"
+              aria-haspopup="dialog"
+              aria-controls="august-15-dialog"
+              data-dialog-trigger
+            >
+              <span>15th of August</span>
+              <span aria-hidden="true">&#8594;</span>
+            </button>
+          </li>
         </ul>
       </nav>
     </aside>
@@ -176,6 +188,30 @@
           Actions for tasks where exact reproducibility doesn&rsquo;t matter, such as triaging
           issues, drafting documentation, researching dependencies, or proposing code
           improvements for human review.
+        </p>
+      </article>
+    </dialog>
+
+    <dialog
+      class="daily-update-dialog"
+      id="august-15-dialog"
+      aria-labelledby="august-15-question"
+      aria-describedby="august-15-answer"
+    >
+      <article class="daily-update-dialog-content">
+        <header class="daily-update-dialog-header">
+          <p>Daily Update / 15th of August</p>
+          <form method="dialog">
+            <button class="dialog-close" type="submit" aria-label="Close dialog" title="Close dialog">
+              <span aria-hidden="true">&#10005;</span>
+            </button>
+          </form>
+        </header>
+        <h2 id="august-15-question">Can I use MCP servers with agentic workflows?</h2>
+        <p id="august-15-answer">
+          Yes. Model Context Protocol (MCP) servers can be configured in a workflow&rsquo;s
+          YAML frontmatter to extend an agent with custom tools, integrations, and data
+          sources, giving it capabilities beyond the built-in toolset.
         </p>
       </article>
     </dialog>
