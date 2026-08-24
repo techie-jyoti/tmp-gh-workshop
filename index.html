@@ -41,6 +41,18 @@
               <span aria-hidden="true">&#8594;</span>
             </button>
           </li>
+          <li>
+            <button
+              class="daily-update-trigger"
+              type="button"
+              aria-haspopup="dialog"
+              aria-controls="august-24-dialog"
+              data-dialog-trigger
+            >
+              <span>24th of August</span>
+              <span aria-hidden="true">&#8594;</span>
+            </button>
+          </li>
         </ul>
       </nav>
     </aside>
@@ -176,6 +188,33 @@
           Actions for tasks where exact reproducibility doesn&rsquo;t matter, such as triaging
           issues, drafting documentation, researching dependencies, or proposing code
           improvements for human review.
+        </p>
+      </article>
+    </dialog>
+
+    <dialog
+      class="daily-update-dialog"
+      id="august-24-dialog"
+      aria-labelledby="august-24-question"
+      aria-describedby="august-24-answer"
+    >
+      <article class="daily-update-dialog-content">
+        <header class="daily-update-dialog-header">
+          <p>Daily Update / 24th of August</p>
+          <form method="dialog">
+            <button class="dialog-close" type="submit" aria-label="Close dialog" title="Close dialog">
+              <span aria-hidden="true">&#10005;</span>
+            </button>
+          </form>
+        </header>
+        <h2 id="august-24-question">Which AI engine should I use?</h2>
+        <p id="august-24-answer">
+          GitHub Copilot is the default engine, supporting the <code>copilot-requests: write</code>
+          permission or a <code>COPILOT_GITHUB_TOKEN</code>. Claude Code offers fine-grained turn
+          control via <code>max-turns</code> and authenticates with <code>ANTHROPIC_API_KEY</code>
+          or Anthropic WIF. Codex uses <code>CODEX_API_KEY</code> or <code>OPENAI_API_KEY</code>,
+          while Gemini uses <code>GEMINI_API_KEY</code> or Google WIF. Compare the available AI
+          engines for GitHub Agentic Workflows before selecting one for your use case.
         </p>
       </article>
     </dialog>
