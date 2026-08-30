@@ -41,6 +41,18 @@
               <span aria-hidden="true">&#8594;</span>
             </button>
           </li>
+          <li>
+            <button
+              class="daily-update-trigger"
+              type="button"
+              aria-haspopup="dialog"
+              aria-controls="august-30-dialog"
+              data-dialog-trigger
+            >
+              <span>30th of August</span>
+              <span aria-hidden="true">&#8594;</span>
+            </button>
+          </li>
         </ul>
       </nav>
     </aside>
@@ -176,6 +188,35 @@
           Actions for tasks where exact reproducibility doesn&rsquo;t matter, such as triaging
           issues, drafting documentation, researching dependencies, or proposing code
           improvements for human review.
+        </p>
+      </article>
+    </dialog>
+
+    <dialog
+      class="daily-update-dialog"
+      id="august-30-dialog"
+      aria-labelledby="august-30-question"
+      aria-describedby="august-30-answer"
+    >
+      <article class="daily-update-dialog-content">
+        <header class="daily-update-dialog-header">
+          <p>Daily Update / 30th of August</p>
+          <form method="dialog">
+            <button class="dialog-close" type="submit" aria-label="Close dialog" title="Close dialog">
+              <span aria-hidden="true">&#10005;</span>
+            </button>
+          </form>
+        </header>
+        <h2 id="august-30-question">Who pays for the use of AI?</h2>
+        <p id="august-30-answer">
+          It depends on the AI engine you configure. For <strong>GitHub Copilot CLI</strong>
+          (the default), billing goes through your organization&rsquo;s
+          <code>copilot-requests: write</code> permission or the account supplying
+          <code>COPILOT_GITHUB_TOKEN</code>. For other engines, the account tied to that
+          provider&rsquo;s API key or workload identity federation pays &mdash; for example
+          the Anthropic account behind <code>ANTHROPIC_API_KEY</code> for Claude Code, or
+          the OpenAI account behind <code>CODEX_API_KEY</code>/<code>OPENAI_API_KEY</code>
+          for OpenAI Codex.
         </p>
       </article>
     </dialog>
