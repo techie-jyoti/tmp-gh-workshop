@@ -41,6 +41,18 @@
               <span aria-hidden="true">&#8594;</span>
             </button>
           </li>
+          <li>
+            <button
+              class="daily-update-trigger"
+              type="button"
+              aria-haspopup="dialog"
+              aria-controls="august-31-dialog"
+              data-dialog-trigger
+            >
+              <span>31st of August</span>
+              <span aria-hidden="true">&#8594;</span>
+            </button>
+          </li>
         </ul>
       </nav>
     </aside>
@@ -176,6 +188,34 @@
           Actions for tasks where exact reproducibility doesn&rsquo;t matter, such as triaging
           issues, drafting documentation, researching dependencies, or proposing code
           improvements for human review.
+        </p>
+      </article>
+    </dialog>
+
+    <dialog
+      class="daily-update-dialog"
+      id="august-31-dialog"
+      aria-labelledby="august-31-question"
+      aria-describedby="august-31-answer"
+    >
+      <article class="daily-update-dialog-content">
+        <header class="daily-update-dialog-header">
+          <p>Daily Update / 31st of August</p>
+          <form method="dialog">
+            <button class="dialog-close" type="submit" aria-label="Close dialog" title="Close dialog">
+              <span aria-hidden="true">&#10005;</span>
+            </button>
+          </form>
+        </header>
+        <h2 id="august-31-question">What is GitHub Agentic Workflows?</h2>
+        <p id="august-31-answer">
+          GitHub Agentic Workflows lets developers define AI-powered repository
+          automation and run AI agents through GitHub Actions. Authors write Markdown
+          instructions with YAML frontmatter, then <code>gh aw compile</code> generates
+          the <code>.lock.yml</code> GitHub Actions workflow. Built-in AI engines
+          include <strong>GitHub Copilot</strong>, <strong>Claude Code</strong>,
+          <strong>OpenAI Codex</strong>, <strong>Google Gemini</strong>, and
+          <strong>Pi</strong>.
         </p>
       </article>
     </dialog>
