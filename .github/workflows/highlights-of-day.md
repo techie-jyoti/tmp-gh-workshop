@@ -3,8 +3,6 @@ name: Highlights of the Day
 description: Add an unused GitHub Agentic Workflows FAQ highlight to the daily updates page.
 engine: copilot
 on:
-  schedule:
-    - cron: "0 */6 * * *"
   workflow_dispatch:
 permissions:
   contents: read
